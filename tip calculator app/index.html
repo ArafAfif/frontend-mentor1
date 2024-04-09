@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <!-- Callig fonts from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Callig stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <picture class="logo">
+      <img src="images/logo.svg" alt="This is a logo" />
+    </picture>
+    <main class="tip_calculator">
+      <section class="bill_input_sec">
+        <div class="bill_sec">
+          <label for="bill">Bill</label>
+          <span id="bill_error" class="error">Can't be Zero</span>
+          <input id="bill" type="number" name="bill" />
+        </div>
+        <div class="tip_sec">
+          <h4>Select Tip %</h4>
+          <ul class="tip">
+            <li>5%</li>
+            <li>10%</li>
+            <li>15%</li>
+            <li>25%</li>
+            <li id="d">50%</li>
+            <li class="custom">
+              <input id="custom" type="number" placeholder="Custom" />
+            </li>
+          </ul>
+        </div>
+        <div class="people_sec">
+          <label for="people_number">Number of People</label>
+          <span id="people_error" class="error">Can't be Zero</span>
+          <input id="people_number" type="number" name="people_number" />
+        </div>
+      </section>
+      <section class="bil_payment_result_sec">
+        <div class="child">
+          <h4>Tip Amount</h4>
+          <span class="person">/ person</span>
+          <span class="dollar" id="tip_amount">0.00$</span>
+        </div>
+        <div class="child">
+          <h4>Total</h4>
+          <span class="person">/ person</span>
+          <span class="dollar" id="total">0.00$</span>
+        </div>
+        <button id="reset">Reset</button>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
